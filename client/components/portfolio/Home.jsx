@@ -8,7 +8,7 @@ export default function Home() {
             <div class="home text-center">
                 <div class="row maxheight">
                     <div class="row align-items-center g-0">
-                        <div class="col g-0">
+                        <div class="col header">
                             <h1 class="display-1">Patrick John Sullivan</h1>
                             <h6 class="display-6">Full Stack Developer</h6>
                             <ul class="list-inline">
