@@ -5,13 +5,31 @@ export default function Home() {
     return (
         <>
 
-            <div class="home text-center">
+            <div class="home">
                 <div class="row maxheight">
                     <div class="row align-items-center g-0">
-                        <div class="col header">
-                            <h1 class="display-1 title m-3">Patrick John Sullivan</h1>
-                            <h6 class="display-6 title m-3">Full Stack Developer</h6>
-                            <div class="btn-group m-3" role="group" aria-label="First group">
+                        <div class="col-2" />
+                        <div class="col-3 header">
+                            <Link to='/about'>
+                                <h1 id="kiaora" class="display-1 title m-3">Kia ora!</h1>
+                            </Link>
+                            <Link to='/work'>
+                                    <h1 id="iam" class="display-1 title m-3">I am</h1>
+                            </Link>
+                            <Link to='/contact'>
+                                    <h1 id="patrick" class="display-1 title m-3">Patrick</h1>
+                            </Link>
+                        </div>
+                        <div class="col-7" />
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+{/* <div id="title" class="btn-group m-3" role="group" aria-label="First group">
                                 <Link to="/about">
                                     <button type="button" class="btn btn-lg btn-outline-light">
                                         About
@@ -31,12 +49,4 @@ export default function Home() {
                                         Contact
                                     </button>
                                 </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </>
-    )
-}
+                            </div> */}

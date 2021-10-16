@@ -34,6 +34,7 @@ body {
 
 .header {
   color: #eeebe4;
+  text-decoration: none;
 }
 
 /* unvisited link */
@@ -45,16 +46,19 @@ a:link {
 /* visited link */
 a:visited {
   color: #eeebe4;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: rgba(183, 0, 255, 0.5);
+  color: #eeebe4;
+  text-decoration: none;
 }
 
 /* selected link */
 a:active {
-  color: rgba(183, 0, 255, 0.5);
+  color: #eeebe4;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map*/

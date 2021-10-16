@@ -62,45 +62,56 @@ __webpack_require__.r(__webpack_exports__);
 
 function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "home text-center"
+    "class": "home"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row align-items-center g-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "col header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    "class": "display-1 title m-3"
-  }, "Patrick John Sullivan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", {
-    "class": "display-6 title m-3"
-  }, "Full Stack Developer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "btn-group m-3",
-    role: "group",
-    "aria-label": "First group"
+    "class": "col-2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "col-3 header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/about"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    type: "button",
-    "class": "btn btn-lg btn-outline-light"
-  }, "About"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "btn-group m-3",
-    role: "group",
-    "aria-label": "First group"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "kiaora",
+    "class": "display-1 title m-3"
+  }, "Kia ora!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/work"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    type: "button",
-    "class": "btn btn-lg btn-outline-light"
-  }, "Work"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "btn-group m-3",
-    role: "group",
-    "aria-label": "First group"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "iam",
+    "class": "display-1 title m-3"
+  }, "I am")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/contact"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    type: "button",
-    "class": "btn btn-lg btn-outline-light"
-  }, "Contact"))))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "patrick",
+    "class": "display-1 title m-3"
+  }, "Patrick"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "col-7"
+  })))));
+}
+{
+  /* <div id="title" class="btn-group m-3" role="group" aria-label="First group">
+                                 <Link to="/about">
+                                     <button type="button" class="btn btn-lg btn-outline-light">
+                                         About
+                                     </button>
+                                 </Link>
+                             </div>
+                             <div class="btn-group m-3" role="group" aria-label="First group">
+                                 <Link to="/work">
+                                     <button type="button" class="btn btn-lg btn-outline-light">
+                                         Work
+                                     </button>
+                                 </Link>
+                             </div>
+                             <div class="btn-group m-3" role="group" aria-label="First group">
+                                 <Link to="/contact">
+                                     <button type="button" class="btn btn-lg btn-outline-light">
+                                         Contact
+                                     </button>
+                                 </Link>
+                             </div> */
 }
 
 /***/ }),
