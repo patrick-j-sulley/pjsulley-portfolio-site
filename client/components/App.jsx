@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom'
 // import { connect } from 'react-redux'
 import Home from './portfolio/Home'
 import About from './portfolio/about/About'
@@ -11,12 +11,10 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route path="/about" component={About} />
           <Route path="/work" component={Work} />
           <Route path="/contact" component={Contact} />
-        </Switch>
       </BrowserRouter>
     </>
   )
