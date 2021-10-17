@@ -1,7 +1,41 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import $ from "jquery";
 
 export default function Home() {
+
+    useEffect(() => {
+        $("#kiaora").hover(
+            function () {
+                $(this).animate({ paddingLeft: '10%' }, 'fast')
+                $(this).text("About")
+            },
+            function () {
+                $(this).animate({ paddingLeft: '0' }, 'fast')
+                $(this).text("Kia ora!")
+            });
+    
+        $("#iam").hover(
+            function () {
+                $(this).animate({ paddingLeft: '10%' }, 'fast')
+                $(this).text("Work")
+            },
+            function () {
+                $(this).animate({ paddingLeft: '0' }, 'fast')
+                $(this).text("I am")
+            });
+    
+        $("#patrick").hover(
+            function () {
+                $(this).animate({ paddingLeft: '10%' }, 'fast')
+                $(this).text("Contact")
+            },
+            function () {
+                $(this).animate({ paddingLeft: '0' }, 'fast')
+                $(this).text("Patrick")
+            });
+    }) 
+
     return (
         <>
 
@@ -28,25 +62,3 @@ export default function Home() {
         </>
     )
 }
-
-{/* <div id="title" class="btn-group m-3" role="group" aria-label="First group">
-                                <Link to="/about">
-                                    <button type="button" class="btn btn-lg btn-outline-light">
-                                        About
-                                    </button>
-                                </Link>
-                            </div>
-                            <div class="btn-group m-3" role="group" aria-label="First group">
-                                <Link to="/work">
-                                    <button type="button" class="btn btn-lg btn-outline-light">
-                                        Work
-                                    </button>
-                                </Link>
-                            </div>
-                            <div class="btn-group m-3" role="group" aria-label="First group">
-                                <Link to="/contact">
-                                    <button type="button" class="btn btn-lg btn-outline-light">
-                                        Contact
-                                    </button>
-                                </Link>
-                            </div> */}
