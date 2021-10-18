@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Work() {
     return (
         <>
-            <div class="home maxheight">
+            <div class="work content maxheight">
                 <div class="row">
                     <div class="col">
                         <Link to="/">

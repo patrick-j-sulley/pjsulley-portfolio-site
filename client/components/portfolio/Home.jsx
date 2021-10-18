@@ -39,7 +39,7 @@ export default function Home() {
     return (
         <>
 
-            <div class="home">
+            <div class="home content">
                 <div class="row maxheight">
                     <div class="row align-items-center g-0">
                         <div class="col-2" />

@@ -18,8 +18,22 @@ body {
 }
 
 .home {
-  background-image: url('./images/bg/bg-home.jpg');
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  background-image: url('https://bl6pap004files.storage.live.com/y4mJ7itWQSvMGksPJL6ioX9cPTULp78cbzHU5ee90SsKr_fEl1iLIvgnpl8jMoLBGWBqTedU1oRjMDbqRaMqUMDFhAf30SBBDI6oekcKlwe6ApRnM_KS_qbKpyf6uAxvzT5QZxGJlL9NRS79sqICYzULM4VsmB-2TL83F_INzXDxi_T0nJ2Mpjovj9Ff6qEVcQc?width=3648&height=2736&cropmode=none');
+}
+
+.about {
+  background-image: url('https://bl6pap004files.storage.live.com/y4mtnVK8x-DnWZVL8xD97UbGE1DmS0OnaVGahG3H66XBBoNeahHUD5LdHcLypQ6WXfGJNHaoDMam9YZjKdUugNdKgk_9mYTdhYwcZgU4Ghug1XXGqCOxVu7pn4WIS3vMsiKHS6EdpguZ67iwtzkL4mq1soEgdENjZx4NcIXxbGb6Q8I29dLsshSz8sERfLgEKM5?width=3648&height=2736&cropmode=none');
+}
+
+.work {
+  background-image: url('https://bl6pap004files.storage.live.com/y4m8XFG4jMErcT_cvYHTdASMlxE_YSgcIRUWvQ2HcSSyWYyuQbEYuZYZ90RQNZNkwZQNky5aQ4e9k9i2OKdhbe-Km5AK-1OYtMPB6XtHrO70YjJnEM3hykVzXFcln9KTt8tO1piATiPsQBQbyEabeFsdRHyOYg4A0hLrNp8tKGrzFkUjI14Q7pMCStaHffClkHA?width=3648&height=2736&cropmode=none');
+}
+
+.contact {
+  background-image: url('https://bl6pap004files.storage.live.com/y4mh-uweLj2Ffuqr2x3XELISIkd2DJBCOWubVTi8_J5Ev-DIosVhOyuLdwdD_9fAdwsv1TPZXK0se_hbV1uQtsplJKIp-8JNzAVIoy8emTZpFtOfHhK2bckI6--aTmeXLEz6hPF2hgE0ElcV1b_6O5S1uWW6wJ2DH-udJHlzpocQqYtNAQ6FE32EBDlZ75xfD6q?width=3648&height=2736&cropmode=none');
+}
+
+.content {
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
