@@ -67,7 +67,7 @@ function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     jquery__WEBPACK_IMPORTED_MODULE_1___default()("#kiaora").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
-        paddingLeft: '10%'
+        paddingLeft: '7.5%'
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("About");
     }, function () {
@@ -78,7 +78,7 @@ function Home() {
     });
     jquery__WEBPACK_IMPORTED_MODULE_1___default()("#iam").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
-        paddingLeft: '10%'
+        paddingLeft: '7.5%'
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("Work");
     }, function () {
@@ -89,7 +89,7 @@ function Home() {
     });
     jquery__WEBPACK_IMPORTED_MODULE_1___default()("#patrick").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
-        paddingLeft: '10%'
+        paddingLeft: '7.5%'
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("Contact");
     }, function () {
@@ -102,9 +102,9 @@ function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "home content"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "row maxheight"
+    "class": " row maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "row align-items-center g-0"
+    "class": " row align-items-center g-0 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-2"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -113,17 +113,17 @@ function Home() {
     to: "/about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     id: "kiaora",
-    "class": "display-1 title m-3"
+    "class": "title"
   }, "Kia ora!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/work"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     id: "iam",
-    "class": "display-1 title m-3"
+    "class": "title"
   }, "I am")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     id: "patrick",
-    "class": "display-1 title m-3"
+    "class": "title"
   }, "Patrick"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-7"
   })))));
@@ -48437,7 +48437,6 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-var __webpack_exports__ = {};
 /*!*************************!*\
   !*** ./client/index.js ***!
   \*************************/
@@ -48463,17 +48462,6 @@ document.addEventListener('DOMContentLoaded', function () {
     store: store
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_5__["default"], null)), document.getElementById('app'));
 });
-})();
-
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
-"use strict";
-/*!**********************************!*\
-  !*** ./client/styles/index.scss ***!
-  \**********************************/
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 })();
 
 /******/ })()

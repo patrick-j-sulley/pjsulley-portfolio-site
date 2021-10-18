@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #eeebe4;
+  background-color: #28282e;
   color: #28282e;
   overflow-x :hidden; 
 }
@@ -63,9 +63,8 @@ a:visited {
   text-decoration: none;
 }
 
-/* mouse over link */
-a:hover {
-  color: #eeebe4;
+.title:hover {
+  color: #bf00ff;
   text-decoration: none;
 }
 
@@ -74,5 +73,10 @@ a:active {
   color: #eeebe4;
   text-decoration: none;
 }
+
+.title{
+  font-weight: bold;
+  font-size:6.75vw;
+  }
 
 /*# sourceMappingURL=styles.css.map*/
