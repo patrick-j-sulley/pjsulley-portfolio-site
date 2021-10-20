@@ -39,27 +39,25 @@ export default function Home() {
 
     return (
         <>
-
-            <div class="home content">
-                <div class=" row maxheight">
-                    <div class=" row align-items-center g-0 ">
-                        <div class="col-2" />
-                        <div class="col-3 header">
-                            <Link to='/about'>
-                                <h1 id="about" class="home-nav">Kia ora!</h1>
-                            </Link>
-                            <Link to='/work'>
-                                <h1 id="work" class="home-nav">I am</h1>
-                            </Link>
-                            <Link to='/contact'>
-                                <h1 id="contact" class="home-nav">Patrick</h1>
-                            </Link>
+                <div class="home content">
+                    <div class=" row maxheight">
+                        <div class=" row align-items-center g-0 ">
+                            <div class="col-2" />
+                            <div class="col-3 header">
+                                <Link to='/about'>
+                                    <h1 id="about" class="home-nav user-select-none">Kia ora!</h1>
+                                </Link>
+                                <Link to='/work'>
+                                    <h1 id="work" class="home-nav user-select-none">I am</h1>
+                                </Link>
+                                <Link to='/contact'>
+                                    <h1 id="contact" class="home-nav user-select-none">Patrick</h1>
+                                </Link>
+                            </div>
+                            <div class="col-7" />
                         </div>
-                        <div class="col-7" />
                     </div>
                 </div>
-            </div>
-
         </>
     )
 }
