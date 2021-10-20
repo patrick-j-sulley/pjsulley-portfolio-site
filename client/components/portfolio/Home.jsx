@@ -5,7 +5,8 @@ import $ from "jquery";
 export default function Home() {
 
     useEffect(() => {
-        $("#kiaora").hover(
+
+        $("#about").hover(
             function () {
                 $(this).animate({ paddingLeft: '7.5%' }, 'fast')
                 $(this).text("About")
@@ -15,7 +16,7 @@ export default function Home() {
                 $(this).text("Kia ora!")
             });
 
-        $("#iam").hover(
+        $("#work").hover(
             function () {
                 $(this).animate({ paddingLeft: '7.5%' }, 'fast')
                 $(this).text("Work")
@@ -25,7 +26,7 @@ export default function Home() {
                 $(this).text("I am")
             });
 
-        $("#patrick").hover(
+        $("#contact").hover(
             function () {
                 $(this).animate({ paddingLeft: '7.5%' }, 'fast')
                 $(this).text("Contact")
@@ -45,13 +46,13 @@ export default function Home() {
                         <div class="col-2" />
                         <div class="col-3 header">
                             <Link to='/about'>
-                                <h1 id="kiaora" class="title">Kia ora!</h1>
+                                <h1 id="about" class="home-nav">Kia ora!</h1>
                             </Link>
                             <Link to='/work'>
-                                <h1 id="iam" class="title">I am</h1>
+                                <h1 id="work" class="home-nav">I am</h1>
                             </Link>
                             <Link to='/contact'>
-                                <h1 id="patrick" class="title">Patrick</h1>
+                                <h1 id="contact" class="home-nav">Patrick</h1>
                             </Link>
                         </div>
                         <div class="col-7" />

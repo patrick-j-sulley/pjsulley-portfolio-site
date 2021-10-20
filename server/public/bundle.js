@@ -65,7 +65,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#kiaora").hover(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#about").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
         paddingLeft: '7.5%'
       }, 'fast');
@@ -76,7 +76,7 @@ function Home() {
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("Kia ora!");
     });
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#iam").hover(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#work").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
         paddingLeft: '7.5%'
       }, 'fast');
@@ -87,7 +87,7 @@ function Home() {
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("I am");
     });
-    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#patrick").hover(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#contact").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
         paddingLeft: '7.5%'
       }, 'fast');
@@ -112,18 +112,18 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    id: "kiaora",
-    "class": "title"
+    id: "about",
+    "class": "home-nav"
   }, "Kia ora!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/work"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    id: "iam",
-    "class": "title"
+    id: "work",
+    "class": "home-nav"
   }, "I am")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/contact"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    id: "patrick",
-    "class": "title"
+    id: "contact",
+    "class": "home-nav"
   }, "Patrick"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-7"
   })))));
