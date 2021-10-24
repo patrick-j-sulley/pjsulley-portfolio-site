@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import $ from "jquery";
+import Footer from '../footer/Footer';
 
 export default function Work() {
     useEffect(() => {
@@ -219,6 +220,7 @@ export default function Work() {
                     </div>
                     <h6 class="display-6 m-3 py-4 text-center" style={{ color: "#eeebe4" }}>Like what you see? <Link class="redirect-home" to="/contact" target="_top"><em>Let's get in contact.</em></Link></h6>
                 </div>
+                <Footer/>
             </div>
 
         </>

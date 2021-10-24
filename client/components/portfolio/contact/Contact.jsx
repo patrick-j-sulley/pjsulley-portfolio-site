@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import emailjs from 'emailjs-com';
 import $ from "jquery";
+import Footer from '../footer/Footer';
 
 export default function Contact() {
     useEffect(() => {
@@ -108,6 +109,7 @@ export default function Contact() {
                     </div>
                     <div class="col-3" />
                 </div>
+                <Footer/>
             </div>
         </>
     )

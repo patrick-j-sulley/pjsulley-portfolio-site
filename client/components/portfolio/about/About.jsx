@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import $ from "jquery";
+import Footer from '../footer/Footer';
 
 export default function About() {
 
@@ -161,6 +162,7 @@ export default function About() {
                     </div>
                     <div class="col-3" />
                 </div>
+                <Footer/>
             </div>
         </>
     )
