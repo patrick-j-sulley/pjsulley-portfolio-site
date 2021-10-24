@@ -29,7 +29,7 @@ export default function About() {
         <>
             <div class="about content maxheight">
                 <Link to="/">
-                    <h2 id="redirect-home" class="position-fixed m-6 redirect-home m-4 top-0 end-0 user-select-none">patricksullivan</h2>
+                    <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none">patricksullivan</h2>
                 </Link>
                 <div class="row text-center align-items-center g-0 maxheight">
                     <div class="col-1" />
@@ -152,7 +152,7 @@ export default function About() {
                             </button>
                         </div>
 
-                        <p class="fs-4">Keen to know more about me? <Link class="redirect-home" to="/contact" target="_top">Let's get in contact</Link>, or check out my resume below.</p>
+                        <p class="fs-4">Keen to know more about me? <Link class="redirect-home" to="/contact" target="_top"><em>Let's get in contact</em></Link>, or check out my resume below.</p>
 
                         <Link to="/files/CV.pdf" target="_blank">
                             <h2 id="resume" class="py-5 redirect-home user-select-none">My Resume (pdf 90kb)</h2>

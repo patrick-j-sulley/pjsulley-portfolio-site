@@ -178,7 +178,7 @@ function About() {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     id: "redirect-home",
-    "class": "position-fixed m-6 redirect-home m-4 top-0 end-0 user-select-none"
+    "class": "position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none"
   }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row text-center align-items-center g-0 maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -355,7 +355,7 @@ function About() {
     "class": "redirect-home",
     to: "/contact",
     target: "_top"
-  }, "Let's get in contact"), ", or check out my resume below."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Let's get in contact")), ", or check out my resume below."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/files/CV.pdf",
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
@@ -472,13 +472,8 @@ function Work() {
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "work content maxheight"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    id: "redirect-home",
-    "class": "position-fixed m-6 redirect-home m-4 top-0 end-0 user-select-none"
-  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "row text-center align-items-center g-0 maxheight"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "row text-center align-items-center g-0 maxheight position-absolute"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-1"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -487,7 +482,14 @@ function Work() {
     "class": "title m-3 user-select-none"
   }, "Web and software development projects I've worked on.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-6"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "container-fluid text-end sticky-top pt-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    id: "redirect-home",
+    "class": "redirect-home mt-6 me-4 user-select-none"
+  }, "patricksullivan")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "content maxheight py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row align-items-center pb-4 g-0"
@@ -812,7 +814,7 @@ function Work() {
     "class": "redirect-home",
     to: "/contact",
     target: "_top"
-  }, "Let's get in contact.")))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("em", null, "Let's get in contact."))))));
 }
 
 /***/ }),

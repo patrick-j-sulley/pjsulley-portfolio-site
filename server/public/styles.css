@@ -14,6 +14,7 @@
 body {
   background-color: #050505 !important;
   overflow-x :hidden; 
+  font-family: 'Play', sans-serif;
 }
 
 @keyframes fadein-bg-animate {
