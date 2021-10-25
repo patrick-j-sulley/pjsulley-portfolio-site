@@ -19,6 +19,9 @@
   "keywords": [
     "fullstack"
   ],
+  "engines": {
+    "node": "16.x"
+  },
   "author": "EDA",
   "license": "ISC",
   "babel": {
