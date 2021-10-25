@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","mappings":"AAAA;;EAEE;EACA;AACF;;AAEA;EACE;EACA;EACA;AACF,C","sources":["webpack://pjsulley-portfolio-site/./client/styles/index.scss"],"sourcesContent":["html,\nbody {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  background-color: #eeebe4;\n  color: #28282e;\n  font-family: 'Lato', sans-serif;\n}\n"],"names":[],"sourceRoot":""}
