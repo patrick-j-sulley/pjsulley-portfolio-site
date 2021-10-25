@@ -30,7 +30,18 @@ export default function About() {
         <>
             <div class="about content maxheight">
                 <Link to="/">
-                    <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none">patricksullivan</h2>
+                    <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        id="redirect-home"
+                        width="64"
+                        height="64"
+                        fill="currentColor"
+                        class="svg-icon bi bi-house-fill"
+                        viewBox="0 0 32 32"
+                        class="position-fixed redirect-home mt-2 ms-2 top-0 start-0 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg>
                 </Link>
                 <div class="row text-center align-items-center g-0 maxheight">
                     <div class="col-1" />
@@ -46,9 +57,9 @@ export default function About() {
                         <h1 class="display-1 m-3">About me.</h1>
                     </div>
                 </div>
-                <div class="row  align-items-center g-0">
-                    <div class="col-3" />
-                    <div class="col-6 header">
+                <div class="row align-items-center g-0">
+                    <div class="col-1 col-md-3" />
+                    <div class="col-10 col-md-6 header">
 
                         <p class="fs-4">Kia ora, I'm Patrick Sullivan (he/him). I'm a tech obsessed kiwi with a passion for full stack
                             web and software development. Being raised on the web, I always dreamt from a very young age about working with
@@ -63,19 +74,19 @@ export default function About() {
                             software development classes at the same time, I discovered that I really enjoyed the creative outlet that side
                             of the tech landscape provided. This prompted a switch up of my academic path into a coding focused one.</p>
 
-                            <div id="carouselExampleFade" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carouselExampleFade" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://snz04pap001files.storage.live.com/y4mZrttQ716H_8kFBWzLo6XDmHikg3UXAZWUXUWnWxD_Y93-RNXfElj4Oxvz0RUnuNzLyKucKrpqw6xcCLaTIqPtFLSl3m6RZBjj3893ch7b49T7kqbe8Al3n5hO9mRkWpdlJxDsF6xxrRQnVBt2lwnCophK-EB_ORR6-m8glZK9kovwP7jpLpOl1vvw3j55UwK?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4mZrttQ716H_8kFBWzLo6XDmHikg3UXAZWUXUWnWxD_Y93-RNXfElj4Oxvz0RUnuNzLyKucKrpqw6xcCLaTIqPtFLSl3m6RZBjj3893ch7b49T7kqbe8Al3n5hO9mRkWpdlJxDsF6xxrRQnVBt2lwnCophK-EB_ORR6-m8glZK9kovwP7jpLpOl1vvw3j55UwK?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4m36JkzU-95yJ7cGbhhIi8VHz2Ec8LZPecnT7KzYah9dfYK5TlgXDZ_n0nk97zkTVaRVyj2pqnGg11QTIzzG7et3d4RL3CnlFLyMdxWBUHsQhXGCBe2Lqd-O4OqwOfHA0A15XSIFOZw_zze5uRqIglupDW6Vt1GUEGgnGDhB9OfyJEZSgv4Zjyq_aFBmOxF90X?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4m36JkzU-95yJ7cGbhhIi8VHz2Ec8LZPecnT7KzYah9dfYK5TlgXDZ_n0nk97zkTVaRVyj2pqnGg11QTIzzG7et3d4RL3CnlFLyMdxWBUHsQhXGCBe2Lqd-O4OqwOfHA0A15XSIFOZw_zze5uRqIglupDW6Vt1GUEGgnGDhB9OfyJEZSgv4Zjyq_aFBmOxF90X?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4mP9gxS4XK99m2HP1vZyDbuO88QKfatwhEdLZmLYpfJlRuNmDN0Mo_HXoUXH0Tcsnk-NF9dWyQiIpt1FgFH8HJqNmidntQAeviXLeuoG0r8FYTdtKgEQ3py5m5OYriJWmz87Hanb16EUWr2WEkXAv8WMT5uxa0TuIoeumriFcNmUSix22Hgon_9nC35CNSwdvR?width=1536&height=864&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4mP9gxS4XK99m2HP1vZyDbuO88QKfatwhEdLZmLYpfJlRuNmDN0Mo_HXoUXH0Tcsnk-NF9dWyQiIpt1FgFH8HJqNmidntQAeviXLeuoG0r8FYTdtKgEQ3py5m5OYriJWmz87Hanb16EUWr2WEkXAv8WMT5uxa0TuIoeumriFcNmUSix22Hgon_9nC35CNSwdvR?width=1536&height=864&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -99,19 +110,19 @@ export default function About() {
                             within an agile dev team. Above all else, this experience taught me the value of teamwork and communication with your
                             whole team in order to achieve a collectively desired outcome.</p>
 
-                            <div id="carouselExampleFade2" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carouselExampleFade2" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://snz04pap001files.storage.live.com/y4m6H6igaFGjgliA1zZeqnP_aBglbAcuxdOnSx7Waz58zZ50jH8OV0Gq85Q-UdF7MojmcpoJPNK5qctQ258jz2olT6ryxufszFd9vS3K7iw8b1XXheF2uZqNgRw2mat0vFSBeKoiGTw4o5J3bWEvKPbppinzxQLyame5wkreKVkFcNlJgR1SeczFr81kW8VQwgt?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4m6H6igaFGjgliA1zZeqnP_aBglbAcuxdOnSx7Waz58zZ50jH8OV0Gq85Q-UdF7MojmcpoJPNK5qctQ258jz2olT6ryxufszFd9vS3K7iw8b1XXheF2uZqNgRw2mat0vFSBeKoiGTw4o5J3bWEvKPbppinzxQLyame5wkreKVkFcNlJgR1SeczFr81kW8VQwgt?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4mf1YlHqGPWykVVUU5JJlOXz70ykb9b8M2q5_R388Yi7jEr74ygoXVmMZzYtrGdaJPPIB3QmyPgMama5lkbmhFRDUV2Mli27iNwFl1fYQXBNVgZD50C6G_y9Q5mwSt59Fj6n_w9WXFGVQ3DtQJFKvVYokQroVuIbedEd5RhDHqhdOJakKchl5gPYP1PBtxdHbD?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4mf1YlHqGPWykVVUU5JJlOXz70ykb9b8M2q5_R388Yi7jEr74ygoXVmMZzYtrGdaJPPIB3QmyPgMama5lkbmhFRDUV2Mli27iNwFl1fYQXBNVgZD50C6G_y9Q5mwSt59Fj6n_w9WXFGVQ3DtQJFKvVYokQroVuIbedEd5RhDHqhdOJakKchl5gPYP1PBtxdHbD?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4msFT31tcSuI-9SVCsbGnEew7Zanm1sgyMzCfjIWTuFZ6pKKikbVAKnqzRpa0mH4jyAJMAiUw6Gcc_LrFdkpWcTBuYAm11G9xFT2kemb7mezk1xh9B-Wj3t3KmfQZXO2ArpIdOY_-cztoXLhazaNPgfG4U4bLQk6I8_hYZq-Ae7y0fKSgv653jorf0Blqo76K0?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4msFT31tcSuI-9SVCsbGnEew7Zanm1sgyMzCfjIWTuFZ6pKKikbVAKnqzRpa0mH4jyAJMAiUw6Gcc_LrFdkpWcTBuYAm11G9xFT2kemb7mezk1xh9B-Wj3t3KmfQZXO2ArpIdOY_-cztoXLhazaNPgfG4U4bLQk6I8_hYZq-Ae7y0fKSgv653jorf0Blqo76K0?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
@@ -128,19 +139,19 @@ export default function About() {
                             my web development expertise, and my love for working with diverse and vibrant teams and communities. I look forward
                             to bringing my experiences and sharing them with the next team that I am fortunate enough to be a part of.</p>
 
-                            <div id="carouselExampleFade3" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div id="carouselExampleFade3" class="py-5 carousel slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://snz04pap001files.storage.live.com/y4mGseIkQZgLiu6UTpgp37jirqUGnQqhjyw4qo90kg8mgBP_uqh3oE33U2ckLCg1pZkpBJGcg5CLCMxy1fIx4GKo5Er8AVhaMc-YtK8DNLjWj6uRclOMMK2h07ZNlcYG2udrToVymEzdDW6HqU52yCWiqb92YSlNtxS0cZ2WzhYatS61Al6NSCElNj1t7yem2gp?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4mGseIkQZgLiu6UTpgp37jirqUGnQqhjyw4qo90kg8mgBP_uqh3oE33U2ckLCg1pZkpBJGcg5CLCMxy1fIx4GKo5Er8AVhaMc-YtK8DNLjWj6uRclOMMK2h07ZNlcYG2udrToVymEzdDW6HqU52yCWiqb92YSlNtxS0cZ2WzhYatS61Al6NSCElNj1t7yem2gp?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4m8uJLIMfN9DKaBQP-EjmBVThk67kYkfLuxwlZLLFEpspt0GGeeCNrUVEPCBJFG6mXL6jXXKkj5xJjtODFq_CKrNeqtB5B3wp7a5CXnZJTx02ju9xPMURAnwFFweYP9Z64UuSqB7alpbkw_vOJ-TE_S7Pl1O3llCUkQrirQ9iiRQbgNtqcRbKi923z_pIt22PW?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4m8uJLIMfN9DKaBQP-EjmBVThk67kYkfLuxwlZLLFEpspt0GGeeCNrUVEPCBJFG6mXL6jXXKkj5xJjtODFq_CKrNeqtB5B3wp7a5CXnZJTx02ju9xPMURAnwFFweYP9Z64UuSqB7alpbkw_vOJ-TE_S7Pl1O3llCUkQrirQ9iiRQbgNtqcRbKi923z_pIt22PW?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://snz04pap001files.storage.live.com/y4my6_bQWgrHnE1Kc3Qm2b8CKtxSiSjPnI9VNqzFFJ4fg8sxeTA4qoRP4ykSrt77T8GgH6UFbytnvSBNsS-fhXKnzy2MhfAX6HSRii2MFMfbls6j4OMoY57srNZUTX9Q6W8S8d_ruJTrmX0QlrXZwuBnRnk-y7Es5SwwHtrgnHjFPUCz8wxr-Mcj4DIgZjaAe_B?width=1024&height=576&cropmode=none" 
-                                    class="d-block w-100" alt="..."/>
+                                    <img src="https://snz04pap001files.storage.live.com/y4my6_bQWgrHnE1Kc3Qm2b8CKtxSiSjPnI9VNqzFFJ4fg8sxeTA4qoRP4ykSrt77T8GgH6UFbytnvSBNsS-fhXKnzy2MhfAX6HSRii2MFMfbls6j4OMoY57srNZUTX9Q6W8S8d_ruJTrmX0QlrXZwuBnRnk-y7Es5SwwHtrgnHjFPUCz8wxr-Mcj4DIgZjaAe_B?width=1024&height=576&cropmode=none"
+                                        class="d-block w-100" alt="..." />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
@@ -160,9 +171,9 @@ export default function About() {
                         </Link>
 
                     </div>
-                    <div class="col-3" />
+                    <div class="col-1 col-md-3" />
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </>
     )
