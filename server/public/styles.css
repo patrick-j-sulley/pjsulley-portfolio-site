@@ -11,9 +11,12 @@
   background: transparent;
 }
 
+html{
+  overflow-x: hidden; 
+}
+
 body {
   background-color: #050505 !important;
-  overflow-x :hidden; 
   font-family: 'Play', sans-serif;
 }
 
@@ -77,6 +80,7 @@ body {
   text-shadow: 2px 2px #050505;
   color: #bf00ff;
 }
+
 .title{
   font-weight: bold;
   font-size:5vw;
@@ -88,6 +92,12 @@ body {
   animation-fill-mode:forwards;
   }
 
+  @media only screen and (max-width: 768px) {
+    .title{
+      font-weight: bold;
+      font-size:8vw;
+      }
+  }
 
 .about {
   background-image: url('https://bl6pap004files.storage.live.com/y4mtnVK8x-DnWZVL8xD97UbGE1DmS0OnaVGahG3H66XBBoNeahHUD5LdHcLypQ6WXfGJNHaoDMam9YZjKdUugNdKgk_9mYTdhYwcZgU4Ghug1XXGqCOxVu7pn4WIS3vMsiKHS6EdpguZ67iwtzkL4mq1soEgdENjZx4NcIXxbGb6Q8I29dLsshSz8sERfLgEKM5?width=3648&height=2736&cropmode=none');

@@ -62,6 +62,7 @@ export default function Home() {
                     <div class=" row maxheight">
                         <div class=" row align-items-center g-0 ">
                             <div class="col-2" />
+
                             {/* Desktop */}
                             <div class="col-3 header d-sm-none d-md-block d-none d-sm-block">
                                 <Link to='/about'>
@@ -74,8 +75,8 @@ export default function Home() {
                                     <h1 id="contact" class="home-nav user-select-none">Patrick</h1>
                                 </Link>
                             </div>
+
                             {/* Mobile */}
-                            {/* <div id="mobile-tap-area" class="mobile-tap-area"> */}
                             <div class="col-4 header d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
                                 <h1 id="about-mobile-toggle" class="home-nav-mobile-toggle user-select-none">Kia ora!</h1>
                                 <h1 id="work-mobile-toggle" class="home-nav-mobile-toggle user-select-none">I am</h1>
@@ -90,6 +91,7 @@ export default function Home() {
                                     <h1 class="home-nav-mobile user-select-none">Contact</h1>
                                 </Link>
                             </div>
+                            
                             <div class="col-md-7 col-sm-6 col-6" />
                             
                         </div>

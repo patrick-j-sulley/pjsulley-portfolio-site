@@ -32,10 +32,10 @@ export default function About() {
                 
                 <div class="row text-center align-items-center g-0 maxheight position-absolute">
                     <div class="col-1" />
-                    <div class="col-5 header">
+                    <div class="col-8 col-md-5 header">
                         <h1 class="title m-3 user-select-none">I'm a full stack developer based in Wellington, New Zealand.</h1>
                     </div>
-                    <div class="col-6" />
+                    <div class="col-md-6 col-sm-3 col-3" />
                 </div>
                 <Link to="/">
                     <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
