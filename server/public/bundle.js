@@ -65,6 +65,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function Home() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#about-mobile").hide();
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#work-mobile").hide();
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#contact-mobile").hide();
     jquery__WEBPACK_IMPORTED_MODULE_1___default()("#about").hover(function () {
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).animate({
         paddingLeft: '7.5%'
@@ -98,17 +101,29 @@ function Home() {
       }, 'fast');
       jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).text("Patrick");
     });
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()("#mobile-tap-area").click(function () {
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()(this).hide();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#about-mobile-toggle").hide();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#work-mobile-toggle").hide();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#contact-mobile-toggle").hide();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#about-mobile").show();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#work-mobile").show();
+      jquery__WEBPACK_IMPORTED_MODULE_1___default()("#contact-mobile").show();
+    });
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "home content"
+    "class": "home content maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "mobile-tap-area",
+    "class": "mobile-tap-area d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+  }, "Tap to continue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": " row maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": " row align-items-center g-0 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-2"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "col-3 header"
+    "class": "col-3 header d-sm-none d-md-block d-none d-sm-block"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/about"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
@@ -125,7 +140,33 @@ function Home() {
     id: "contact",
     "class": "home-nav user-select-none"
   }, "Patrick"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "col-7"
+    "class": "col-4 header d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "about-mobile-toggle",
+    "class": "home-nav-mobile-toggle user-select-none"
+  }, "Kia ora!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "work-mobile-toggle",
+    "class": "home-nav-mobile-toggle user-select-none"
+  }, "I am"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    id: "contact-mobile-toggle",
+    "class": "home-nav-mobile-toggle user-select-none"
+  }, "Patrick"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "about-mobile",
+    to: "/about"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "home-nav-mobile user-select-none"
+  }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "work-mobile",
+    to: "/work"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "home-nav-mobile user-select-none"
+  }, "Work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "contact-mobile",
+    to: "/contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "home-nav-mobile user-select-none"
+  }, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "col-md-7 col-sm-6 col-6"
   })))));
 }
 
