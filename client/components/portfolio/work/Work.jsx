@@ -39,10 +39,12 @@ export default function Work() {
             <div class="content maxheight py-4">
 
                 <div class="row align-items-center pb-4 g-0">
+                    <div class="col-1"/>
                     <div class="col header text-center">
                         <h1 class="display-1 m-3">My Work.</h1>
-                        <h6 class="display-6 m-3 py-4">A selection of my portfolio. For a complete look at my output, please check out my <a class="redirect-home" href="https://github.com/patrick-j-sulley" target="_blank">GitHub.</a></h6>
+                        <h4 class="m-3 py-4">A selection of my portfolio. For a complete look at my output, please check out my <a class="redirect-home" href="https://github.com/patrick-j-sulley" target="_blank">GitHub.</a></h4>
                     </div>
+                    <div class="col-1"/>
                 </div>
                 <div class="row align-items-center g-0">
                     <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
@@ -53,8 +55,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">HiHi</h5>
                                     <p class="card-text fs-5">HiHi is a social media web app inspired by Twitter, created by Team HiHi for the final week long group project of the web dev bootcamp at Enspiral Dev Academy. Built with HTML, CSS, JavaScript, SASS, ReactJS, Redux, Node.JS, Express, Authenticare, SQLite, Postgres, Knex.JS.</p>
-                                    <a href="https://github.com/patrick-j-sulley/hihi" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://hihi-app.herokuapp.com/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Heroku</a>
+                                    <a href="https://github.com/patrick-j-sulley/hihi" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://hihi-app.herokuapp.com/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Heroku</a>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +67,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Party Party!</h5>
                                     <p class="card-text fs-5">Party Party is an random cocktail generator web app. Party Party was created by Team Party Party for a one day length group project at Enspiral Dev Academy, and uses TheCocktailDB external API. Built with HTML, CSS, JavaScript, ReactJS, Redux, Node.JS, and Express.</p>
-                                    <a href="https://github.com/patrick-j-sulley/party-party" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://solo-party-party.herokuapp.com/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Heroku</a>
+                                    <a href="https://github.com/patrick-j-sulley/party-party" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://solo-party-party.herokuapp.com/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Heroku</a>
                                 </div>
                             </div>
                         </div>
@@ -77,8 +79,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">PJSIT Portfolio Site</h5>
                                     <p class="card-text fs-5">PJSIT is a developer portfolio site that I created for myself before the one that you're on right now. It is basic single page site, programmed in HTML, CSS, and JavaScript.</p>
-                                    <a href="https://github.com/patrick-j-sulley/Developer-Portfolio-HTTP-Website" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://pjsit.neocities.org/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Hosted Site</a>
+                                    <a href="https://github.com/patrick-j-sulley/Developer-Portfolio-HTTP-Website" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://pjsit.neocities.org/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Hosted Site</a>
 
                                 </div>
                             </div>
@@ -90,7 +92,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">FieldGO Dispatch KPI Dashboard</h5>
                                     <p class="card-text fs-5">A KPI dashboard page component for FieldGO's enterprise mobility software suite. Built with Angular, TypeScript, Node.JS, Angular Material, Google Charts, RxJS, and Moment.JS</p>
-                                    <a href="https://fieldgo.com/" class="btn btn-outline-light fs-5" target="_blank">FieldGO</a>
+                                    <a href="https://fieldgo.com/" class="btn btn-outline-light fs-6" target="_blank">FieldGO</a>
                                 </div>
                             </div>
                         </div>
@@ -101,8 +103,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Lost and Found</h5>
                                     <p class="card-text fs-5">Lost and found is a digital billboard web app that enables users to register/login, and create listings for lost and found pets. This was a 2 day web dev group project at Enspiral Dev Academy. Built with HTML, CSS, JavaScript, React, Redux, Node.JS, SQLite, Postgres, and Authenticare.</p>
-                                    <a href="https://github.com/patrick-j-sulley/lost-and-found" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://missingfursons.herokuapp.com/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Heroku</a>
+                                    <a href="https://github.com/patrick-j-sulley/lost-and-found" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://missingfursons.herokuapp.com/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Heroku</a>
                                 </div>
                             </div>
                         </div>
@@ -113,8 +115,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">IBGNZ WordPress Site</h5>
                                     <p class="card-text fs-5">IBGNZ (Independent Berry Growers of New Zealand) is a website built with the WordPress CMS. IBGNZ is an e-commerce marketplace website that allows for users to login/authenticate and list items for sale. E-commerce functionality powered by 'WC Vendors Marketplace' and 'WooCommerce' plugins, price calculation functionality powered by 'Calculated Fields Form' plugin.</p>
-                                    <a href="https://github.com/patrick-j-sulley/IBGNZ-WordPress-Site" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://newsimland.com/~Patrick-Sullivan2/wordpress/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Hosted Site</a>
+                                    <a href="https://github.com/patrick-j-sulley/IBGNZ-WordPress-Site" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://newsimland.com/~Patrick-Sullivan2/wordpress/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Hosted Site</a>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +127,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Yeezy Jump</h5>
                                     <p class="card-text fs-5">Yeezy Jump is a Kanye West themed 2D mobile run & jump game. Engine powered by unity, in game scripts/assets programmed with C# in Visual Studio 2017.</p>
-                                    <a href="https://github.com/patrick-j-sulley/Yeezy-Jump" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
+                                    <a href="https://github.com/patrick-j-sulley/Yeezy-Jump" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +138,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Crystal Moon Art Portfolio Site</h5>
                                     <p class="card-text fs-5">Crystal Moon Art & Design is a digital artist portfolio website. Built with HTML, CSS, JavaScript, and Bootstrap.</p>
-                                    <a href="https://s3-ap-southeast-2.amazonaws.com/crystalmoonad/index.html" class="btn btn-outline-light fs-5" target="_blank">Hosted Site</a>
+                                    <a href="https://s3-ap-southeast-2.amazonaws.com/crystalmoonad/index.html" class="btn btn-outline-light fs-6" target="_blank">Hosted Site</a>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +149,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Goodbye Fresh</h5>
                                     <p class="card-text fs-5">Goodbye Fresh is a takeout randomizer web app. The app uses the Nearby Search API within the Google Maps Places API for all GET & POST routes. Created by Team Ravenclaw for a one day group project at Enspiral Dev Academy. Built with HTML, CSS, JavaScript, ReactJS, Node.JS, and Express.</p>
-                                    <a href="https://github.com/patrick-j-sulley/goodbye-fresh" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
+                                    <a href="https://github.com/patrick-j-sulley/goodbye-fresh" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +160,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">PixArt</h5>
                                     <p class="card-text fs-5">PixArt is a digital pixel art web app. Created by Team PixArt for a one day group project at Enspiral Dev Academy. Built with HTML, CSS, JavaScript, ReactJS, Node.JS, and Express.</p>
-                                    <a href="https://github.com/patrick-j-sulley/PixArt" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
+                                    <a href="https://github.com/patrick-j-sulley/PixArt" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -169,8 +171,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">The One Word Story</h5>
                                     <p class="card-text fs-5">The one word story is an interactive text based web app that contains an ongoing story that users can input one word at a time to. Created by Team 3dom for a one day group project at Enspiral Dev Academy. Built with HTML, CSS, and JavaScript.</p>
-                                    <a href="https://github.com/patrick-j-sulley/the-one-word-story" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://theonewordstory.herokuapp.com/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Heroku</a>
+                                    <a href="https://github.com/patrick-j-sulley/the-one-word-story" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://theonewordstory.herokuapp.com/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Heroku</a>
                                 </div>
                             </div>
                         </div>
@@ -181,8 +183,8 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">EDA Foundations Blog Site</h5>
                                     <p class="card-text fs-5">My EDA Foundations Blog Site documents my 5 week journey through the foundations stage of the web development bootcamp at Enspiral Dev Academy. Built with HTML/CSS, JavaScript, and Bootstrap.</p>
-                                    <a href="https://github.com/patrick-j-sulley/patrick-j-sulley.github.io" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
-                                    <a href="https://patrick-j-sulley.github.io/" class="btn btn-outline-light fs-5 mx-2" target="_blank">Hosted Site</a>
+                                    <a href="https://github.com/patrick-j-sulley/patrick-j-sulley.github.io" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
+                                    <a href="https://patrick-j-sulley.github.io/" class="btn btn-outline-light fs-6 mx-2" target="_blank">Hosted Site</a>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +195,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">Chefrachy</h5>
                                     <p class="card-text fs-5">Chefrachy is a recipe sharing web app, constructed with the MVC design pattern. Data storage and functionality done via connected MySQL database. Built with HTML, CSS, JavaScript, jQuery, PHP, and Bootstrap.</p>
-                                    <a href="https://github.com/patrick-j-sulley/Chefrachy-PHP-MVC-Site" class="btn btn-outline-light fs-5" target="_blank">GitHub</a>
+                                    <a href="https://github.com/patrick-j-sulley/Chefrachy-PHP-MVC-Site" class="btn btn-outline-light fs-6" target="_blank">GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +206,7 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">That's a Rap</h5>
                                     <p class="card-text fs-5">That's a Rap is a hip hop themed blog site built using WordPress. Created and operated by me as a part of a level 5 social media class at NMIT.</p>
-                                    <a href="https://thatsarap.home.blog/" class="btn btn-outline-light fs-5" target="_blank">WordPress</a>
+                                    <a href="https://thatsarap.home.blog/" class="btn btn-outline-light fs-6" target="_blank">WordPress</a>
                                 </div>
                             </div>
                         </div>
@@ -215,12 +217,16 @@ export default function Work() {
                                 <div class="card-body">
                                     <h5 class="card-title fs-1">NMIT Student Blog</h5>
                                     <p class="card-text fs-5">During my time studying at NMIT, I operated a blog site built using WordPress to document my studies throughout my 4 year tenure.</p>
-                                    <a href="https://patricksullivannmit.wordpress.com/" class="btn btn-outline-light fs-5" target="_blank">WordPress</a>
+                                    <a href="https://patricksullivannmit.wordpress.com/" class="btn btn-outline-light fs-6" target="_blank">WordPress</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h6 class="display-6 m-3 py-4 text-center" style={{ color: "#eeebe4" }}>Like what you see? <Link class="redirect-home" to="/contact" target="_top"><em>Let's get in contact.</em></Link></h6>
+                    <div class="col-1"/>
+                    <div class="col header text-center">
+                    <h6 class="display-6 m-3 py-4" style={{ color: "#eeebe4" }}>Like what you see? <Link class="redirect-home" to="/contact" target="_top"><em>Let's get in contact.</em></Link></h6>
+                    </div>
+                    <div class="col-1"/>
                 </div>
                 <Footer/>
             </div>

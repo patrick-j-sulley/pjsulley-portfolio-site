@@ -184,7 +184,12 @@ a:active {
 
 .svg-icon{
   fill:#eeebe4;
-  margin:2%
+}
+
+@media only screen and (min-width: 768px) {
+  .svg-icon{
+    padding: 10%;
+  }
 }
 
 .svg-icon path,
