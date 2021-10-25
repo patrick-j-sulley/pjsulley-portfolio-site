@@ -4,9 +4,8 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "build": "run-p build:client build:server",
+    "build": "run-p build:client",
     "build:client": "npm run webpack -- --mode production",
-    "build:server": "npm run knex -- migrate:latest",
     "start": "node server",
     "test": "jest",
     "test:watch": "jest --noStackTrace --watchAll",
