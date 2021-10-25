@@ -34,9 +34,6 @@ export default function Contact() {
     return (
         <>
             <div class="contact content maxheight">
-                <Link to="/">
-                    <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
-                </Link>
                 <div class="row text-center align-items-center g-0 maxheight position-absolute">
                     <div class="col-1" />
                     <div class="col-5 header">
@@ -44,6 +41,9 @@ export default function Contact() {
                     </div>
                     <div class="col-6" />
                 </div>
+                <Link to="/">
+                    <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
+                </Link>
                 <div class="container-fluid text-end sticky-top pt-4">
                     <Link to="/">
                         <h2 id="redirect-home"
