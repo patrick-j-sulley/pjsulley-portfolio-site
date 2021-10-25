@@ -31,24 +31,21 @@ export default function About() {
             <div class="about content maxheight">
                 <Link to="/">
                     <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        id="redirect-home"
-                        width="64"
-                        height="64"
-                        fill="currentColor"
-                        class="svg-icon bi bi-house-fill"
-                        viewBox="0 0 32 32"
-                        class="position-fixed redirect-home mt-2 ms-2 top-0 start-0 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
-                        <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                    </svg>
                 </Link>
-                <div class="row text-center align-items-center g-0 maxheight">
+                <div class="row text-center align-items-center g-0 maxheight position-absolute">
                     <div class="col-1" />
                     <div class="col-5 header">
                         <h1 class="title m-3 user-select-none">I'm a full stack developer based in Wellington, New Zealand.</h1>
                     </div>
                     <div class="col-6" />
+                </div>
+                <div class="container-fluid text-end sticky-top pt-4">
+                    <Link to="/">
+                        <h2 id="redirect-home"
+                            class="redirect-home-mobile mt-2 me-3 top-0 start-0 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
+                            ps
+                        </h2>
+                    </Link>
                 </div>
             </div>
             <div class="content maxheight py-4">
