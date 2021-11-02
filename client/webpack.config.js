@@ -1,6 +1,5 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: ['./client/index.js'],
@@ -10,7 +9,6 @@ module.exports = {
   },
   mode: 'development',
   plugins: [
-    new Dotenv(),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
       chunkFilename: '[id].css',
@@ -39,5 +37,6 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  target: 'node'
 }
