@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import emailjs from 'emailjs-com';
 import $ from "jquery";
 import Footer from '../footer/Footer';
+require('dotenv').config()
 
 export default function Contact() {
     useEffect(() => {
