@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import $ from "jquery";
 import Footer from '../footer/Footer';
-require('dotenv').config()
+import { postContact } from '../../../apis/contact';
 
 export default function Contact() {
     useEffect(() => {
@@ -19,17 +19,22 @@ export default function Contact() {
             });
     })
 
-    const sendEmail = (e) => {
-        e.preventDefault();
 
-        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
-            .then((result) => {
-                alert("Thank you for your message! I will get back to you as soon as possible.");
-            }, (error) => {
-                alert(error.text);
-            });
-        e.target.reset();
-    };
+    const handleSubmit = e => {
+        e.preventDefault();
+        const { name, email, subject, message } = e.target.elements;
+        let details = {
+          name: name.value,
+          email: email.value,
+          subject: subject.value,
+          message: message.value,
+        };
+        postContact(details)
+        .then((res) => {
+            console.log(res)
+            e.target.reset();
+        })
+      };
 
     return (
         <>
@@ -66,7 +71,7 @@ export default function Contact() {
                 <div class="row align-items-center g-0">
                     <div class="col-1 col-md-3"/>
                     <div class="col header">
-                        <form onSubmit={sendEmail}>
+                        <form onSubmit={handleSubmit}>
                             <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
                                 <div class="col mb-3">
                                     <label for="formInputName" class="form-label">Name</label>
