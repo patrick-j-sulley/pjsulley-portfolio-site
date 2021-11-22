@@ -19,6 +19,10 @@ export default function Contact() {
             });
     })
 
+    const [viewForm, setViewForm] = useState(true)
+
+    const [formResult, setFormResult] = useState('')
+
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -30,9 +34,16 @@ export default function Contact() {
           message: message.value,
         };
         postContact(details)
-        .then((res) => {
-            console.log(res)
-            e.target.reset();
+        .then(res => {
+            setViewForm(false)
+            if(res.status === "Message Sent") {
+                setFormResult("Thank you! I will get back to your inquiry ASAP.")
+                e.target.reset();
+            }
+            else {
+                setFormResult(res.status)
+            }
+            
         })
       };
 
@@ -71,7 +82,8 @@ export default function Contact() {
                 <div class="row align-items-center g-0">
                     <div class="col-1 col-md-3"/>
                     <div class="col header">
-                        <form onSubmit={handleSubmit}>
+                        { viewForm ? (
+                            <form onSubmit={handleSubmit}>
                             <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
                                 <div class="col mb-3">
                                     <label for="formInputName" class="form-label">Name</label>
@@ -95,7 +107,14 @@ export default function Contact() {
                             <div class="d-grid gap-2 mt-2">
                                 <button type="submit" class="btn btn-outline-light btn-lg">Submit</button>
                             </div>
-                        </form>
+                        </form>)
+                        :
+                        (
+                        <div class="col header text-center">
+                            <h4 class="m-3 py-4">{formResult}</h4>
+                        </div>
+                        )
+                        }
                         <div class="row row-cols-4 my-4">
                             <div id="col">
                                 <a href="https://twitter.com/ThePJSIT" target="_blank" alt="Twitter">
