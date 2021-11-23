@@ -8,7 +8,6 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV == 'development') {
 
 const mailgun = require('mailgun-js')({apiKey: process.env.API_KEY, domain: process.env.DOMAIN});
 
-
 router.post("/", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
