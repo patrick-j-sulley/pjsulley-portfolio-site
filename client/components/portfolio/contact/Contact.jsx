@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import $ from "jquery";
 import Footer from '../footer/Footer';
 
@@ -8,6 +8,7 @@ if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
     const envConfig = require('dotenv').config()
     if(envConfig.error) throw envConfig.error
   }
+import { postContact } from '../../../apis/contact';
 
 export default function Contact() {
     useEffect(() => {
@@ -23,17 +24,33 @@ export default function Contact() {
             });
     })
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const [viewForm, setViewForm] = useState(true)
 
-        emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target, process.env.USER_ID)
-            .then((result) => {
-                alert("Thank you for your message! I will get back to you as soon as possible.");
-            }, (error) => {
-                alert(error.text);
-            });
-        e.target.reset();
-    };
+    const [formResult, setFormResult] = useState('')
+
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const { name, email, subject, message } = e.target.elements;
+        let details = {
+          name: name.value,
+          email: email.value,
+          subject: subject.value,
+          message: message.value,
+        };
+        postContact(details)
+        .then(res => {
+            setViewForm(false)
+            if(res.status === "Message Sent") {
+                setFormResult("Thank you! I will get back to your inquiry ASAP.")
+                e.target.reset();
+            }
+            else {
+                setFormResult(res.status)
+            }
+            
+        })
+      };
 
     return (
         <>
@@ -70,7 +87,8 @@ export default function Contact() {
                 <div class="row align-items-center g-0">
                     <div class="col-1 col-md-3"/>
                     <div class="col header">
-                        <form onSubmit={sendEmail}>
+                        { viewForm ? (
+                            <form onSubmit={handleSubmit}>
                             <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
                                 <div class="col mb-3">
                                     <label for="formInputName" class="form-label">Name</label>
@@ -94,7 +112,14 @@ export default function Contact() {
                             <div class="d-grid gap-2 mt-2">
                                 <button type="submit" class="btn btn-outline-light btn-lg">Submit</button>
                             </div>
-                        </form>
+                        </form>)
+                        :
+                        (
+                        <div class="col header text-center">
+                            <h4 class="m-3 py-4">{formResult}</h4>
+                        </div>
+                        )
+                        }
                         <div class="row row-cols-4 my-4">
                             <div id="col">
                                 <a href="https://twitter.com/ThePJSIT" target="_blank" alt="Twitter">
@@ -115,7 +140,7 @@ export default function Contact() {
                                     </svg></a>
                             </div>
                             <div id="col">
-                                <a href="mailto:thepatrickjohnsullivan@gmail.com&amp;subject=General%20Inquiry">
+                                <a href="mailto:thepatrickjohnsullivan@gmail.com?subject=General%20Inquiry">
                                     <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
                                         <path xmlns="http://www.w3.org/2000/svg" d="M306.768,346.814h0.131c4.615,0,9.176-1.339,12.866-3.777l1.001-0.643c0.218-0.142,0.446-0.271,0.675-0.424l11.658-9.645   l278.259-229.624c-0.576-0.795-1.557-1.339-2.602-1.339H3.233c-0.751,0-1.448,0.272-2.003,0.729l291.125,239.954   C296.024,345.083,301.259,346.814,306.768,346.814z M0,133.899v340.37l208.55-168.471L0,133.899z M403.668,306.941L612,474.356   V135.031L403.668,306.941z M337.431,361.585c-8.305,6.814-19.168,10.57-30.576,10.57c-11.451,0-22.304-3.734-30.587-10.516   l-47.765-39.394L0,506.806v0.587c0,1.753,1.502,3.244,3.276,3.244h605.491c1.741,0,3.232-1.491,3.232-3.255v-0.544L383.693,323.4   L337.431,361.585z"></path>
                                     </svg></a>

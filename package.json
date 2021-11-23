@@ -11,7 +11,7 @@
     "test:watch": "jest --noStackTrace --watchAll",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
-    "dev:server": "nodemon --watch server server/index.js",
+    "dev:server": "nodemon server",
     "webpack": "webpack --config ./client/webpack.config.js",
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "lint": "eslint --ext .js,.jsx ."
@@ -72,13 +72,15 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {
-    "@types/node": "^16.11.6",
     "bootstrap-icons": "^1.6.1",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "emailjs-com": "^3.2.0",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "knex": "^0.95.11",
+    "nodemailer": "^6.7.0",
+    "nodemailer-mailgun-transport": "^2.1.3",
     "pg": "^8.5.1",
     "superagent": "^6.1.0"
   }
