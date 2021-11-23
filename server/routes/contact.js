@@ -10,11 +10,6 @@ const contactEmail = nodemailer.createTransport({
   },
 });
 
-if (!process.env.NODE_ENV || process.env.NODE_ENV == 'development') {
-  const envConfig = require('dotenv').config()
-  if (envConfig.error) throw envConfig.error
-}
-
 router.post("/", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
