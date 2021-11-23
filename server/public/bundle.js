@@ -675,7 +675,7 @@ function Contact() {
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "col"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "mailto:thepatrickjohnsullivan@gmail.com&subject=General%20Inquiry"
+    href: "mailto:thepatrickjohnsullivan@gmail.com?subject=General%20Inquiry"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
     "class": "svg-icon",
     xmlns: "http://www.w3.org/2000/svg",
