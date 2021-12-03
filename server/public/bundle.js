@@ -189,7 +189,46 @@ function Home() {
     "class": "home-nav-mobile user-select-none"
   }, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-md-7 col-sm-6 col-6"
-  })))));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "position-fixed pt-4 ps-4 top-0 start-0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    "class": "btn navbar-toggler bg-light rounded",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#nav-menu",
+    "aria-expanded": "false",
+    "aria-controls": "collapseExample"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "64",
+    height: "64",
+    fill: "currentColor",
+    "class": "bi bi-list",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    "fill-rule": "evenodd",
+    d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "collapse",
+    id: "nav-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "bg-dark p-5 mt-2 rounded-3 shadow-lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "about-mobile",
+    to: "/about"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "work-mobile",
+    to: "/work"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    id: "contact-mobile",
+    to: "/contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Contact")))))));
 }
 
 /***/ }),
@@ -254,13 +293,50 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     id: "redirect-home",
     "class": "position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block"
-  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "container-fluid text-end sticky-top pt-4 d-md-none"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    "class": "redirect-home-mobile mt-2 me-3 top-0 start-0 user-select-none"
-  }, "ps")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "position-fixed redirect-home-mobile mt-4 me-3 top-0 end-0 user-select-none d-md-none"
+  }, "ps")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "sticky-top pt-4 ps-4 top-0 start-0 w-75"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    "class": "btn navbar-toggler bg-light rounded",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#nav-menu",
+    "aria-expanded": "false",
+    "aria-controls": "collapseExample"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "64",
+    height: "64",
+    fill: "currentColor",
+    "class": "bi bi-list",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    "fill-rule": "evenodd",
+    d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "collapse",
+    id: "nav-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "bg-dark p-5 mt-2 rounded-3 shadow-lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "about-mobile",
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu-site p-3"
+  }, "patricksullivan.live")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "work-mobile",
+    to: "/work"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Work")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "contact-mobile",
+    to: "/contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Contact")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "content maxheight py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row align-items-center pb-4 g-0"
@@ -540,14 +616,50 @@ function Contact() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     id: "redirect-home",
     "class": "position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block"
-  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "container-fluid text-end sticky-top pt-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    id: "redirect-home",
-    "class": "redirect-home-mobile mt-2 me-3 top-0 start-0 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
-  }, "ps")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "position-fixed redirect-home-mobile mt-4 me-3 top-0 end-0 user-select-none d-md-none"
+  }, "ps")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "sticky-top pt-4 ps-4 top-0 start-0 w-75"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    "class": "btn navbar-toggler bg-light rounded",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#nav-menu",
+    "aria-expanded": "false",
+    "aria-controls": "collapseExample"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "64",
+    height: "64",
+    fill: "currentColor",
+    "class": "bi bi-list",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    "fill-rule": "evenodd",
+    d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "collapse",
+    id: "nav-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "bg-dark p-5 mt-2 rounded-3 shadow-lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    id: "about-mobile",
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu-site p-3"
+  }, "patricksullivan.live")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    id: "work-mobile",
+    to: "/about"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    id: "contact-mobile",
+    to: "/work"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Work")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "content maxheight"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row align-items-center g-0"
@@ -833,16 +945,55 @@ function Work() {
     "class": "title m-3 user-select-none"
   }, "Web and software development projects I've worked on.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "col-md-6 col-sm-3 col-3"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    "class": "container-fluid text-end sticky-top pt-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     id: "redirect-home",
-    "class": "redirect-home mt-6 me-4 user-select-none d-sm-none d-md-block d-none d-sm-block"
-  }, "patricksullivan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    "class": "redirect-home-mobile mt-6 me-4 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none"
-  }, "ps")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block"
+  }, "patricksullivan")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    "class": "position-fixed redirect-home-mobile mt-4 me-3 top-0 end-0 user-select-none d-md-none"
+  }, "ps")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "sticky-top pt-4 ps-4 top-0 start-0 w-75"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    "class": "btn navbar-toggler bg-light rounded",
+    type: "button",
+    "data-bs-toggle": "collapse",
+    "data-bs-target": "#nav-menu",
+    "aria-expanded": "false",
+    "aria-controls": "collapseExample"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "64",
+    height: "64",
+    fill: "currentColor",
+    "class": "bi bi-list",
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    "fill-rule": "evenodd",
+    d: "M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "collapse",
+    id: "nav-menu"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    "class": "bg-dark p-5 mt-2 rounded-3 shadow-lg"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "about-mobile",
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu-site p-3"
+  }, "patricksullivan.live")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "work-mobile",
+    to: "/about"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    id: "contact-mobile",
+    to: "/contact"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    "class": "user-select-none home-nav-menu p-3"
+  }, "Contact")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "content maxheight py-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     "class": "row align-items-center pb-4 g-0"
