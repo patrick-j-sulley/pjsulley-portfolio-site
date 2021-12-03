@@ -27,24 +27,24 @@ export default function Contact() {
         e.preventDefault();
         const { name, email, subject, message } = e.target.elements;
         let details = {
-          name: name.value,
-          email: email.value,
-          subject: subject.value,
-          message: message.value,
+            name: name.value,
+            email: email.value,
+            subject: subject.value,
+            message: message.value,
         };
         postContact(details)
-        .then(res => {
-            setViewForm(false)
-            if(res.status === "Message Sent") {
-                setFormResult("Thank you! I will get back to your inquiry ASAP.")
-                e.target.reset();
-            }
-            else {
-                setFormResult(res.status)
-            }
-            
-        })
-      };
+            .then(res => {
+                setViewForm(false)
+                if (res.status === "Message Sent") {
+                    setFormResult("Thank you! I will get back to your inquiry ASAP.")
+                    e.target.reset();
+                }
+                else {
+                    setFormResult(res.status)
+                }
+
+            })
+    };
 
     return (
         <>
@@ -59,60 +59,77 @@ export default function Contact() {
                 <Link to="/">
                     <h2 id="redirect-home" class="position-fixed redirect-home mt-4 me-3 top-0 end-0 user-select-none d-sm-none d-md-block d-none d-sm-block">patricksullivan</h2>
                 </Link>
-                <div class="container-fluid text-end sticky-top pt-4">
-                    <Link to="/">
-                        <h2 id="redirect-home"
-                            class="redirect-home-mobile mt-2 me-3 top-0 start-0 user-select-none d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none">
-                            ps
-                        </h2>
-                    </Link>
+                <Link to="/">
+                    <h2 class="position-fixed redirect-home-mobile mt-4 me-3 top-0 end-0 user-select-none d-md-none">
+                        ps
+                    </h2>
+                </Link>
+                <div class="sticky-top pt-4 ps-4 top-0 start-0 w-75">
+                    <button class="btn navbar-toggler bg-light rounded" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-expanded="false" aria-controls="collapseExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <div class="collapse" id="nav-menu">
+                        <div class="bg-dark p-5 mt-2 rounded-3 shadow-lg">
+                            <Link id="about-mobile" to='/'>
+                                <h1 class="user-select-none home-nav-menu-site p-3">patricksullivan.live</h1>
+                            </Link>
+                            <Link id="work-mobile" to='/about'>
+                                <h1 class="user-select-none home-nav-menu p-3">About</h1>
+                            </Link>
+                            <Link id="contact-mobile" to='/work'>
+                                <h1 class="user-select-none home-nav-menu p-3">Work</h1>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="content maxheight">
                 <div class="row align-items-center g-0">
-                <div class="col-1 col-md-3"/>
+                    <div class="col-1 col-md-3" />
                     <div class="col header text-center">
                         <h1 class="display-1 m-3">Contact me.</h1>
                         <h4 class="m-3 py-4">You can reach me through either the form, or the social links below.</h4>
                     </div>
-                    <div class="col-1 col-md-3"/>
+                    <div class="col-1 col-md-3" />
                 </div>
                 <div class="row align-items-center g-0">
-                    <div class="col-1 col-md-3"/>
+                    <div class="col-1 col-md-3" />
                     <div class="col header">
-                        { viewForm ? (
+                        {viewForm ? (
                             <form onSubmit={handleSubmit}>
-                            <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
-                                <div class="col mb-3">
-                                    <label for="formInputName" class="form-label">Name</label>
-                                    <input id="formInputName" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name" name="name" required />
+                                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
+                                    <div class="col mb-3">
+                                        <label for="formInputName" class="form-label">Name</label>
+                                        <input id="formInputName" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name" name="name" required />
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="formInputEmail" class="form-label">Email address</label>
+                                        <input id="formInputEmail" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" name="email" required />
+                                    </div>
                                 </div>
-                                <div class="col mb-3">
-                                    <label for="formInputEmail" class="form-label">Email address</label>
-                                    <input id="formInputEmail" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" name="email" required />
+                                <div class="row row-cols-1">
+                                    <div class="col mb-3">
+                                        <label for="formInputSubject" class="form-label">Subject</label>
+                                        <input id="formInputSubject" type="text" class="form-control form-control-lg" placeholder="Subject" aria-label="Subject" name="subject" required />
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="formInputMessage" class="form-label">Message</label>
+                                        <textarea id="formInputMessage" class="form-control form-control-lg" rows="3" placeholder="Message" aria-label="Message" name="message" required />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row row-cols-1">
-                                <div class="col mb-3">
-                                    <label for="formInputSubject" class="form-label">Subject</label>
-                                    <input id="formInputSubject" type="text" class="form-control form-control-lg" placeholder="Subject" aria-label="Subject" name="subject" required />
+                                <div class="d-grid gap-2 mt-2">
+                                    <button type="submit" class="btn btn-outline-light btn-lg">Submit</button>
                                 </div>
-                                <div class="col mb-3">
-                                    <label for="formInputMessage" class="form-label">Message</label>
-                                    <textarea id="formInputMessage" class="form-control form-control-lg" rows="3" placeholder="Message" aria-label="Message" name="message" required />
+                            </form>)
+                            :
+                            (
+                                <div class="col header text-center">
+                                    <h4 class="m-3 py-4">{formResult}</h4>
                                 </div>
-                            </div>
-                            <div class="d-grid gap-2 mt-2">
-                                <button type="submit" class="btn btn-outline-light btn-lg">Submit</button>
-                            </div>
-                        </form>)
-                        :
-                        (
-                        <div class="col header text-center">
-                            <h4 class="m-3 py-4">{formResult}</h4>
-                        </div>
-                        )
+                            )
                         }
                         <div class="row row-cols-4 my-4">
                             <div id="col">
@@ -141,7 +158,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div class="col-1 col-md-3"/>
+                    <div class="col-1 col-md-3" />
                 </div>
                 <Footer />
             </div>
