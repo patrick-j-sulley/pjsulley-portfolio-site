@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import $ from "jquery";
 import Footer from '../footer/Footer';
-import { postContact } from '../../../apis/contact';
 
 export default function Contact() {
     useEffect(() => {
@@ -17,34 +16,6 @@ export default function Contact() {
                 $(this).text("patricksullivan")
             });
     })
-
-    const [viewForm, setViewForm] = useState(true)
-
-    const [formResult, setFormResult] = useState('')
-
-
-    const handleSubmit = e => {
-        e.preventDefault();
-        const { name, email, subject, message } = e.target.elements;
-        let details = {
-            name: name.value,
-            email: email.value,
-            subject: subject.value,
-            message: message.value,
-        };
-        postContact(details)
-            .then(res => {
-                setViewForm(false)
-                if (res.status === "Message Sent") {
-                    setFormResult("Thank you! I will get back to your inquiry ASAP.")
-                    e.target.reset();
-                }
-                else {
-                    setFormResult(res.status)
-                }
-
-            })
-    };
 
     return (
         <>
@@ -91,46 +62,13 @@ export default function Contact() {
                     <div class="col-1 col-md-3" />
                     <div class="col header text-center">
                         <h1 class="display-1 m-3">Contact me.</h1>
-                        <h4 class="m-3 py-4">You can reach me through either the form, or the social links below.</h4>
+                        <h4 class="m-3 py-4">You can reach me through the social links below or send me an email.</h4>
                     </div>
                     <div class="col-1 col-md-3" />
                 </div>
                 <div class="row align-items-center g-0">
                     <div class="col-1 col-md-3" />
                     <div class="col header">
-                        {viewForm ? (
-                            <form onSubmit={handleSubmit}>
-                                <div class="row row-cols-1 row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-xs-12 row-cols-s-12">
-                                    <div class="col mb-3">
-                                        <label for="formInputName" class="form-label">Name</label>
-                                        <input id="formInputName" type="text" class="form-control form-control-lg" placeholder="Name" aria-label="Name" name="name" required />
-                                    </div>
-                                    <div class="col mb-3">
-                                        <label for="formInputEmail" class="form-label">Email address</label>
-                                        <input id="formInputEmail" type="email" class="form-control form-control-lg" placeholder="Email" aria-label="Email" name="email" required />
-                                    </div>
-                                </div>
-                                <div class="row row-cols-1">
-                                    <div class="col mb-3">
-                                        <label for="formInputSubject" class="form-label">Subject</label>
-                                        <input id="formInputSubject" type="text" class="form-control form-control-lg" placeholder="Subject" aria-label="Subject" name="subject" required />
-                                    </div>
-                                    <div class="col mb-3">
-                                        <label for="formInputMessage" class="form-label">Message</label>
-                                        <textarea id="formInputMessage" class="form-control form-control-lg" rows="3" placeholder="Message" aria-label="Message" name="message" required />
-                                    </div>
-                                </div>
-                                <div class="d-grid gap-2 mt-2">
-                                    <button type="submit" class="btn btn-outline-light btn-lg">Submit</button>
-                                </div>
-                            </form>)
-                            :
-                            (
-                                <div class="col header text-center">
-                                    <h4 class="m-3 py-4">{formResult}</h4>
-                                </div>
-                            )
-                        }
                         <div class="row row-cols-4 my-4">
                             <div id="col">
                                 <a href="https://twitter.com/ThePJSIT" target="_blank" alt="Twitter">

@@ -16,8 +16,5 @@ server.use(express.urlencoded({extended:false}))
 server.get('*', function (request, response) {
     response.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
-
-const contactRoutes = require('./routes/contact')
-server.use('/api/v1/contact',contactRoutes)
   
 module.exports = server
